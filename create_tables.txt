@@ -1,0 +1,19 @@
+use jadrn047;
+
+drop table if exists person;
+
+create table person (
+    id int AUTO_INCREMENT PRIMARY KEY,
+    lname varchar(50) NOT NULL,
+    fname varchar(50) NOT NULL,
+    age varchar(15) NOT NULL,
+    email varchar(50) NOT NULL,
+    Experience_level varchar(15) NOT NULL,
+    category varchar(15) NOT NULL,
+    userpic varchar(50) NOT NULL
+    );
+
+INSERT INTO person VALUES(0,'John','Doe','26','johndoe@yahoo.com','expert','adult','rj.jpg');
+INSERT INTO person VALUES(0,'Joey','Down','17','joeydown@yahoo.com','experienced','teen','pj.jpg');
+
+

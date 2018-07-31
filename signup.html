@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="proj2style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <link href="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+    <script src="proj2.js"></script>
+</head>
+
+                                                                                <!-- code by Namratha Prabhu 
+                                                                                        Account number: (jadrn047)
+                                                                                        CS545 Fall 2017 -->
+
+
+<body class="formbody">
+	<div>
+		<p>
+			<a href="http://jadran.sdsu.edu/~jadrn047/proj3/index.html" class="homesign"> home
+			</a>
+		</p>
+	</div>
+	<div><p id="heading1"> SDSU<br> MARATHON</p></div>
+	<div><p id="datesign"> December 3rd,2017</p></div>
+	
+    <div id="form">
+    	<fieldset>
+        <legend>Sign Up</legend>
+        <form name="signup"
+          action="process_request.php"
+          method="post">
+          <ul>
+
+            <li><label for="fname">First Name:</label>
+            <input type="text" name="fname" id="" size="25" ></li>
+            <li><label for="mname">Middle Name:</label>
+            <input type="text" name="mname" id="mname" size="25" ></li>    
+            <li><label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" size="25" ></li>
+            <li><label for="address1">Address:</label>
+            <input type="text" name="address" id="address1" size="50" ></li>    
+            <li><label for="address2">Address:</label>
+            <input type="text" name="address2" id="address2" size="50" ></li>
+            <li><label for="city">City:</label>
+            <input type="text" name="city" id="city" size="15" >&nbsp;
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state" size="5" >&nbsp;
+            <label for="zip">Zip:</label>
+            <input type="text" name="zip" id="zip" size="5" maxlength="5" ></li> 
+            <li><label for="phone">Phone:</label>
+            (<input type="text" name="area_phone" id="area_phone" size="3" maxlength="3">)&nbsp;&nbsp;
+            <input type="text" name="prefix_phone" id="prefix_phone" size="3" maxlength="3" >&nbsp;&nbsp;
+            <input type="text" name="phone" id="phone" size="4" maxlength="4" >
+            </li>      
+          <li><label for="email">EMail:</label>
+          <input type="text" name="email" id="email" size="30" placeholder=" name@example.com"/></li>
+          <li><label for="gender">Gender:</label>
+          <input type="radio" name="gender" value="male"><span class="span3"> Male</span>
+          <input type="radio" name="gender" value="female"><span class="span3"> Female</span>
+          <input type="radio" name="gender" value="other"><span class="span3"> Other</span></li>
+          <li><label for="dob">Date of Birth:</label>
+          <input type="text" name="month" id="m" size="2" maxlength="2" placeholder=" mm" />  &nbsp;/&nbsp;
+          <input type="text" name="day" id="d" size="2" maxlength="2" placeholder=" dd"/> &nbsp;/&nbsp;
+          <input type="text" name="year" id="y" size="4" maxlength="4" placeholder=" yyyy"/></li> 
+          <li><label>  Please enter the details of the medical conditions you have&nbsp;(If any) </label></li>
+          <textarea rows="4" cols="55" name="medicalconditions"></textarea>      
+          <li><label for="Experience_level">Experience Level:</label>
+          <input type="radio" name="Experience_level" value="expert"><span class="span3"> Expert</span>
+          <input type="radio" name="Experience_level" value="experienced"><span class="span3"> Experienced</span>
+          <input type="radio" name="Experience_level" value="novice"><span class="span3"> Novice</span></li>       
+          <li><label for="category">Category:</label>
+          <input type="radio" name="category" value="teen"><span class="span3"> Teen</span>
+          <input type="radio" name="category" value="adult"><span class="span3"> Adult</span>
+          <input type="radio" name="category" value="senior"><span class="span3"> Senior</span></li>
+          <li><label for="runner_img">Runner's Image</label>
+            <input type="file" name="runner_img" enctype="multipart/form-data" id="runner_img" accept="image/*"/></li>
+
+        </ul>
+
+          <div id="error_message">&nbsp; </div>
+
+          <div id="buttonblock"> 
+          <input type="reset" value="Clear Data" class="button">
+          <input type="submit" name="submit" id="fbutton" value="Submit Data" class="button">
+          </div>
+
+       </form>
+       </fieldset>
+	
+    </div>
+</body>
+</html>
+

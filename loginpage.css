@@ -1,0 +1,48 @@
+
+/* Namratha Prabhu (jadrn047)   */
+
+h1, h2 { 
+	text-align: center;
+        color: black;
+        font-size: 50px;
+margin-top: 70px;
+}
+input 
+{ margin: 5px;
+}
+#message_line 
+{ color: red;
+ }
+#block {
+	height: 25px;
+        width: 200px;
+}
+span {
+	font-size: 25px;
+        color:black;
+}
+
+.button {
+height: 30px;
+width: 100px;
+font-size: 17px;
+text-align: center;
+border-radius: 2em;
+color:white;
+background:black;
+border: 1px solid white;
+}
+
+body {
+background: url("http://www.wheelpower.org.uk/sites/default/files/styles/large/public/images/shutterstock_358877561_web.jpg?itok=kNGVQTgA");
+background-size: cover;
+opacity:0.9; 
+}
+
+.align{
+text-align: center;
+margin-top: 60px;
+}
+.align1{
+text-align: center;
+}
